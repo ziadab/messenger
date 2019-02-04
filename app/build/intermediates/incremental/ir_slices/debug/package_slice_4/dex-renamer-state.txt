@@ -1,0 +1,4 @@
+#Mon Feb 04 16:29:16 GMT 2019
+base.0=/home/zeus/AndroidStudioProjects/Hmmm/app/build/intermediates/transforms/dexMerger/debug/4
+path.0=classes.dex
+renamed.0=classes.dex

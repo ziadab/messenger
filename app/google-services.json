@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "327029677936",
+    "firebase_url": "https://hmmm-fe940.firebaseio.com",
+    "project_id": "hmmm-fe940",
+    "storage_bucket": "hmmm-fe940.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327029677936:android:0ca5f5f0fc034963",
+        "android_client_info": {
+          "package_name": "com.abouelfarah.thlamessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327029677936-oloo1gvem9tlapsmier0dp0679kr05c9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBESU_PO89F8pMGmPk6b0tm6ilVzclvdc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

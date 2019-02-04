@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent" android:background="#000">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:paddingLeft="16dp"
+            android:id="@+id/emailLogin" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" app:layout_constraintHorizontal_bias="0.0"
+            android:background="@drawable/rounded_corner" android:hint="Email" android:layout_marginTop="152dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:paddingLeft="16dp"
+            android:id="@+id/pwdLogin"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/emailLogin"
+            android:background="@drawable/rounded_corner" android:hint="Password"
+            android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_width="0dp"/>
+    <Button
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:textStyle="bold"
+            android:id="@+id/Login" app:layout_constraintEnd_toEndOf="@+id/pwdLogin"
+            app:layout_constraintStart_toStartOf="@+id/pwdLogin" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/pwdLogin" app:layout_constraintHorizontal_bias="0.0"
+            android:onClick="login"/>
+</android.support.constraint.ConstraintLayout>
