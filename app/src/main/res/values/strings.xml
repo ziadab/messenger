@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Messenger</string>
+    <string name="name_app">Messenger</string>
+    <string name="title_activity_try_groupie">try_groupie</string>
 </resources>
