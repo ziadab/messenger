@@ -130,4 +130,6 @@ myRef.setValue("Hello, World!")*/
 
 }
 
-class User(val fullname:String, val uid:String, val email:String, val password:String, val profileImgUrl:String)
+class User(val fullname:String, val uid:String, val email:String, val password:String, val profileImgUrl:String){
+    constructor() : this("", "", "", "", "")
+}
