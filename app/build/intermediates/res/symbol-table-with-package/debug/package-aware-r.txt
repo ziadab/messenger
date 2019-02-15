@@ -1068,6 +1068,7 @@ drawable notify_panel_notification_icon_bg
 drawable rounded_button
 drawable rounded_circle
 drawable rounded_corner
+drawable send_msg_button
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1116,6 +1117,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id chat_log
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1184,6 +1186,7 @@ id media_actions
 id message
 id middle
 id mini
+id msgText
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1206,6 +1209,7 @@ id password
 id password_repeat
 id percent
 id pin
+id profileImage
 id progress_circular
 id progress_horizontal
 id pwdLogin
@@ -1236,6 +1240,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id send_button
 id shortcut
 id showCustom
 id showHome
@@ -1344,8 +1349,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chat_log
 layout activity_last_message
 layout activity_new_message
+layout chat_row_from
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

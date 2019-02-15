@@ -9,27 +9,34 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-
-        <activity android:name=".NewMessage" android:parentActivityName=".LastMessageActivity">
+        <activity android:name=".messages.ChatLog"
+                    android:parentActivityName=".messages.LastMessageActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".LastMessageActivity"/>
+                    android:value=".messages.LastMessageActivity"/>
         </activity>
-        <activity android:name=".LastMessageActivity">
+        <activity
+                android:name=".messages.NewMessage"
+                android:parentActivityName=".messages.LastMessageActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".messages.LastMessageActivity"/>
+        </activity>
+        <activity android:name=".messages.LastMessageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".registerLogin.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".registerLogin.LoginActivity">
         </activity>
     </application>
 

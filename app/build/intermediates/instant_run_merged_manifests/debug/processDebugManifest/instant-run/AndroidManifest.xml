@@ -33,27 +33,34 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.abouelfarah.messenger.NewMessage"
-            android:parentActivityName="com.abouelfarah.messenger.LastMessageActivity" >
+            android:name="com.abouelfarah.messenger.messages.ChatLog"
+            android:parentActivityName="com.abouelfarah.messenger.messages.LastMessageActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LastMessageActivity" />
+                android:value=".messages.LastMessageActivity" />
         </activity>
-        <activity android:name="com.abouelfarah.messenger.LastMessageActivity" >
+        <activity
+            android:name="com.abouelfarah.messenger.messages.NewMessage"
+            android:parentActivityName="com.abouelfarah.messenger.messages.LastMessageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages.LastMessageActivity" />
+        </activity>
+        <activity android:name="com.abouelfarah.messenger.messages.LastMessageActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.abouelfarah.messenger.RegisterActivity" >
+        <activity android:name="com.abouelfarah.messenger.registerLogin.RegisterActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.abouelfarah.messenger.LoginActivity" >
+        <activity android:name="com.abouelfarah.messenger.registerLogin.LoginActivity" >
         </activity>
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

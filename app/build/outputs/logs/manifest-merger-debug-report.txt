@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
 MERGED from [com.xwray:groupie-kotlin-android-extensions:2.1.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/groupie-kotlin-android-extensions-2.1.0.aar/71ccadc85f78dd234ceb0602b4fa2a12/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:28.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/f06d4ec1e69d7edd1036bd64115b00d1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a605facd12ec4236773ac177a41de39c/AndroidManifest.xml:17:1-22:12
@@ -62,25 +62,25 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/zeus/.gradle/cach
 MERGED from [android.arch.core:runtime:1.1.1] /home/zeus/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ac04335aaded93da2b89abc76d6fc675/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/zeus/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/e382df9df70775b83a4d8d4cd4e5f143/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/4815beced7f360e2faf8fe15ecddab48/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:3:11-46
 		INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
 		INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
 		INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:1-43:12
 		INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:5:5-34:19
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:5:5-41:19
 MERGED from [com.android.support:design:28.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/f06d4ec1e69d7edd1036bd64115b00d1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/f06d4ec1e69d7edd1036bd64115b00d1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/zeus/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/7b9ec1c50323ae88151ab5aec3bcf00e/AndroidManifest.xml:9:5-20
@@ -145,40 +145,46 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home
 		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:6:13-39
 	android:theme
 		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:11:13-44
-activity#com.abouelfarah.messenger.NewMessage
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:13:9-17:20
+activity#com.abouelfarah.messenger.messages.ChatLog
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:12:9-17:20
 	android:parentActivityName
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:13:46-95
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:13:21-79
 	android:name
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:13:19-45
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:12:19-51
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:14:13-16:59
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:14:13-16:68
 	android:value
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:16:21-57
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:16:21-66
 	android:name
 		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:15:21-67
-activity#com.abouelfarah.messenger.LastMessageActivity
+activity#com.abouelfarah.messenger.messages.NewMessage
 ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:18:9-24:20
+	android:parentActivityName
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:20:17-75
 	android:name
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:18:19-54
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:19:13-23:29
-action#android.intent.action.MAIN
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:20:17-68
-	android:name
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:20:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:22:17-76
-	android:name
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:22:27-74
-activity#com.abouelfarah.messenger.RegisterActivity
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:19:17-52
+activity#com.abouelfarah.messenger.messages.LastMessageActivity
 ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:25:9-31:20
 	android:name
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:25:19-51
-activity#com.abouelfarah.messenger.LoginActivity
-ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:32:9-33:20
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:25:19-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:27:17-68
 	android:name
-		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:32:19-48
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.abouelfarah.messenger.registerLogin.RegisterActivity
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:32:9-38:20
+	android:name
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:32:19-65
+activity#com.abouelfarah.messenger.registerLogin.LoginActivity
+ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:39:9-40:20
+	android:name
+		ADDED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml:39:19-62
 uses-sdk
 INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/zeus/AndroidStudioProjects/Hmmm/app/src/main/AndroidManifest.xml
