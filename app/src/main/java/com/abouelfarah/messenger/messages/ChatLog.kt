@@ -11,6 +11,7 @@ import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
@@ -21,12 +22,12 @@ import kotlinx.android.synthetic.main.chat_row_to.view.*
 class ChatLog : AppCompatActivity() {
 
     val adapter = GroupAdapter<ViewHolder>()
+    val username: User = intent.getParcelableExtra<User>(USER_NAME)!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_log)
 
-        val username = intent.getParcelableExtra<User>(USER_NAME)
         supportActionBar?.title = username.fullname
 
         chat_log.adapter = adapter
@@ -46,9 +47,11 @@ class ChatLog : AppCompatActivity() {
                 val message = p0.getValue(ChatMessage::class.java)
                 if (message != null){
                     if(message.uid == FirebaseAuth.getInstance().uid){
-                        adapter.add(ChatItemTo(message.message))
+                        val currentUser = LastMessageActivity.currentUser
+                        adapter.add(ChatItemTo(message.message, currentUser!!))
                     }else{
-                        adapter.add(ChatItemFrom(message.message))
+
+                        adapter.add(ChatItemFrom(message.message, username))
                     }
                 }
 
@@ -87,25 +90,27 @@ class ChatLog : AppCompatActivity() {
 }
 
 
-class ChatItemFrom(val text : String) : Item<ViewHolder>(){
+class ChatItemFrom(val text : String, val user : User) : Item<ViewHolder>(){
     override fun getLayout(): Int {
         return R.layout.chat_row_from
     }
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.msgTextFrom.text = text
+        Picasso.get().load(user.profileImgUrl).into(viewHolder.itemView.profileImageFrom)
     }
 
 }
 
 
-class ChatItemTo(val text : String) : Item<ViewHolder>(){
+class ChatItemTo(val text: String, val user: User) : Item<ViewHolder>(){
     override fun getLayout(): Int {
         return R.layout.chat_row_to
     }
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.msgTextTo.text = text
+        Picasso.get().load(user.profileImgUrl).into(viewHolder.itemView.profileImageTo)
     }
 
 }

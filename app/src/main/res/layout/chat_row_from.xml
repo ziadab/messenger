@@ -16,7 +16,7 @@
             android:id="@+id/msgTextFrom"
             app:layout_constraintStart_toEndOf="@+id/profileImageFrom"
             app:layout_constraintTop_toTopOf="@+id/profileImageFrom" android:layout_marginTop="16dp"/>
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="60dp"
             android:layout_height="60dp" app:srcCompat="@android:drawable/btn_star_big_on"
             android:id="@+id/profileImageFrom" android:layout_marginTop="4dp"

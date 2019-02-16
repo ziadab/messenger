@@ -1186,7 +1186,8 @@ id media_actions
 id message
 id middle
 id mini
-id msgText
+id msgTextFrom
+id msgTextTo
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1209,7 +1210,8 @@ id password
 id password_repeat
 id percent
 id pin
-id profileImage
+id profileImageFrom
+id profileImageTo
 id progress_circular
 id progress_horizontal
 id pwdLogin
@@ -1353,6 +1355,7 @@ layout activity_chat_log
 layout activity_last_message
 layout activity_new_message
 layout chat_row_from
+layout chat_row_to
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

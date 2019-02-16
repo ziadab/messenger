@@ -17,7 +17,7 @@
             app:layout_constraintTop_toTopOf="@+id/profileImageTo" android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/profileImageTo"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="60dp"
             android:layout_height="60dp" app:srcCompat="@android:drawable/btn_star_big_on"
             android:id="@+id/profileImageTo"
