@@ -15,6 +15,7 @@ import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.activity_chat_log.*
+import kotlinx.android.synthetic.main.activity_chat_log.view.*
 import kotlinx.android.synthetic.main.chat_row_from.view.*
 import kotlinx.android.synthetic.main.chat_row_to.view.*
 
@@ -43,7 +44,10 @@ class ChatLog : AppCompatActivity() {
 
         send_button.setOnClickListener {
             performSending()
+            message.text = null
         }
+
+
     }
 
     private fun listenToMessage(){
@@ -55,10 +59,10 @@ class ChatLog : AppCompatActivity() {
                 if (message != null){
                     if(message.uid == FirebaseAuth.getInstance().uid){
                         val currentUser = LastMessageActivity.currentUser
-                        adapter.add(ChatItemTo(message.message, currentUser!!))
+                        adapter.add(ChatItemFrom(message.message, currentUser!!))
                     }else{
 
-                        adapter.add(ChatItemFrom(message.message, username!!))
+                        adapter.add(ChatItemTo(message.message, username!!))
                     }
                 }
 
@@ -86,11 +90,12 @@ class ChatLog : AppCompatActivity() {
 
     private fun performSending(){
         val ref = FirebaseDatabase.getInstance().getReference("/messages").push()
-        val message = message.text.toString()
+        val msg = message.text.toString()
         val fromId = FirebaseAuth.getInstance().uid ?: return
-        //val toId = username.uid
+        val toId = username!!.uid
 
-        //ref.setValue(ChatMessage(ref.key!!, message, fromId, toId, System.currentTimeMillis()))
+        ref.setValue(ChatMessage(ref.key!!, msg, fromId, toId, System.currentTimeMillis()))
+
     }
 
 }
