@@ -3,7 +3,6 @@ package com.abouelfarah.messenger.messages
 import android.support.v7.app.AppCompatActivity
 import com.abouelfarah.messenger.R
 import android.os.Bundle
-import com.abouelfarah.messenger.messages.NewMessage.Companion.USER_NAME
 import com.abouelfarah.messenger.models.ChatMessage
 import com.abouelfarah.messenger.models.User
 import com.google.firebase.auth.FirebaseAuth
@@ -22,13 +21,21 @@ import kotlinx.android.synthetic.main.chat_row_to.view.*
 class ChatLog : AppCompatActivity() {
 
     val adapter = GroupAdapter<ViewHolder>()
-    val username: User = intent.getParcelableExtra<User>(USER_NAME)!!
+
+    var username : User ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_log)
 
-        supportActionBar?.title = username.fullname
+        val fullname = intent.getStringExtra("FULLNAME")!!
+        val uid = intent.getStringExtra("UID")!!
+        val email = intent.getStringExtra("EMAIL")!!
+        val password = intent.getStringExtra("PASSWORD")!!
+        val profileUrl = intent.getStringExtra("PROFIL_URL")!!
+        username = User(fullname, uid, email, password, profileUrl)
+
+        supportActionBar?.title = username!!.fullname
 
         chat_log.adapter = adapter
 
@@ -51,7 +58,7 @@ class ChatLog : AppCompatActivity() {
                         adapter.add(ChatItemTo(message.message, currentUser!!))
                     }else{
 
-                        adapter.add(ChatItemFrom(message.message, username))
+                        adapter.add(ChatItemFrom(message.message, username!!))
                     }
                 }
 
@@ -81,10 +88,9 @@ class ChatLog : AppCompatActivity() {
         val ref = FirebaseDatabase.getInstance().getReference("/messages").push()
         val message = message.text.toString()
         val fromId = FirebaseAuth.getInstance().uid ?: return
-        val username = intent.getParcelableExtra<User>(USER_NAME)
-        val toId = username.uid
+        //val toId = username.uid
 
-        ref.setValue(ChatMessage(ref.key!!, message, fromId, toId, System.currentTimeMillis()))
+        //ref.setValue(ChatMessage(ref.key!!, message, fromId, toId, System.currentTimeMillis()))
     }
 
 }

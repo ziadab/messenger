@@ -16,6 +16,7 @@ import com.xwray.groupie.ViewHolder
 import com.xwray.groupie.Item
 import kotlinx.android.synthetic.main.activity_new_message.*
 import kotlinx.android.synthetic.main.user_new_msg_row.view.*
+import java.io.Serializable
 
 class NewMessage : AppCompatActivity() {
 
@@ -29,9 +30,6 @@ class NewMessage : AppCompatActivity() {
 
     }
 
-    companion object {
-        val USER_NAME = "USER_NAME"
-    }
 
     private fun fetchUser(){
         val ref = FirebaseDatabase.getInstance().getReference("/users")
@@ -54,7 +52,11 @@ class NewMessage : AppCompatActivity() {
                     val user = item as UserItem
 
                     val intent = Intent(view.context, ChatLog::class.java)
-                    intent.putExtra(USER_NAME, user.user)
+                    intent.putExtra("FULLNAME", user.user.fullname)
+                    intent.putExtra("UID", user.user.uid)
+                    intent.putExtra("EMAIL", user.user.email)
+                    intent.putExtra("PASSWORD", user.user.password)
+                    intent.putExtra("PROFIL_URL", user.user.profileImgUrl)
                     startActivity(intent)
                     finish()
                 }
